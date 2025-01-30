@@ -11,20 +11,6 @@ This repository provides a reusable JavaScript function and a React hook to dete
 - Includes a **React Hook** for easy integration in React projects
 - Cross-browser support (limited for experimental features)
 
-## Installation
-
-### Using NPM (for React Hook)
-
-```sh
-npm install @your-namespace/multi-monitor-hook
-```
-
-### Using Yarn
-
-```sh
-yarn add @your-namespace/multi-monitor-hook
-```
-
 ## Usage
 
 ### JavaScript Function
@@ -32,7 +18,7 @@ yarn add @your-namespace/multi-monitor-hook
 You can use the JavaScript function to detect multiple monitors.
 
 ```javascript
-import { detectMultipleMonitors } from "./multiMonitor";
+import { detectMultipleMonitors } from "./detect-multiple-monitors";
 
 console.log(detectMultipleMonitors());
 ```
@@ -42,7 +28,7 @@ console.log(detectMultipleMonitors());
 For React applications, use the `useMultiMonitor` hook:
 
 ```javascript
-import useMultiMonitor from "@your-namespace/multi-monitor-hook";
+import useMultiMonitor from "./detect-multiple-monitors";
 
 const MultiMonitorCheck = () => {
   const isMultiMonitor = useMultiMonitor();
